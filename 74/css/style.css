@@ -161,6 +161,11 @@ small{
     font-size: 25px;
 }
 
+.falseDiv{
+    text-align: center;
+    font-size: 20px;
+}
+
 /*共通*/
 
 /*一言コメント*/
@@ -225,3 +230,4 @@ small{
     color: white;
     text-decoration: underline;
 }
+
