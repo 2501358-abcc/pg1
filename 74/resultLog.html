@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>過去の記録</title>
+        <link rel="stylesheet" href="css/style.css" >
+        <script src="js/script.js" type="text/javascript" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div class="title" id="title">
+            <button class="changebutton" onclick="changeComand('index.html')">日々</button>
+            <h1>過去のの記録</h1>
+            <button class="setumeisyo" onclick="displayInstructions('title')">？</button>
+        </div>
+        <div class="sortFilter" id="sortFilter">
+            <button class="sortButton" onclick="outputData('up')">昇順▲</button>
+            <button class="sortButton" onclick="outputData('down')">降順▼</button>
+        </div>
+        <div id="logdiv">
+
+        </div>
+        <div class="hitokoto" id="hitokoto">
+            <p id="coment" class="coment"></p>
+            <script>
+                window.onload = displayComent("result");
+            </script>
+        </div>
+        <script>
+            window.onload = outputData("up");
+        </script>
+        <small>2501358 田中琴音</small>
+    </body>
+</html>

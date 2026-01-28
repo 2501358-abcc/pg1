@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>学習チェックアプリ</title>
+        <link rel="stylesheet" href="css/style.css" >
+        <script src="js/script.js" type="text/javascript" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div class="title" id="title">
+            <button class="changebutton" onclick="changeComand('resultLog.html')">過去</button>
+            <h1>日々の記録</h1>
+            <button class="setumeisyo" onclick="displayInstructions('title')">？</button>
+        </div>
+        <div class="inputForm">
+            <div class="koumoku">
+                <label><input type="checkbox" name="cheack" value="paiza" class="checkbox">paiza</label>
+                <input type="text" class="inputtext" id="paiza">
+            </div>
+
+            <div class="koumoku">
+                <label><input type="checkbox" name="cheack" value="shiken" class="checkbox">資格試験対策</label>
+                <input type="text" class="inputtext" id="shiken">
+            </div>
+
+            <div class="koumoku">
+                <label><input type="checkbox" name="cheack" value="syotest" class="checkbox">小テスト対策</label>
+                <input type="text" class="inputtext" id="syotest">
+            </div>
+
+            <div class="koumoku">
+                <label><input type="checkbox" name="cheack" value="work" class="checkbox">課題</label>
+                <input type="text" class="inputtext" id="work">
+            </div>
+
+            <div class="koumoku">
+                <label><input type="checkbox" name="cheack" value="other" class="checkbox">その他</label>
+                <input type="text" class="inputtext" id="other">
+            </div>
+        </div>
+        <button class="button" onclick="getData()">完了</button>
+        <div class="hitokoto" id="hitokoto">
+            <p id="coment" class="coment"></p>
+            <script>
+                window.onload = displayComent("index");
+            </script>
+        </div>
+        <small>2501358 田中琴音</small>
+    </body>
+</html>
